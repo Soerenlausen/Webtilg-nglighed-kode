@@ -1,0 +1,323 @@
+
+* {
+   box-sizing: border-box;
+   margin: 0; 
+   color: white;
+}
+
+h2 {
+    font-family: 'Futura', sans-serif;
+    color: #002432;
+    font-size: 32px;
+}
+
+p {
+    font-family: Helvetica, sans-serif;
+    font-size: 24px; 
+}
+
+main {
+    padding-top: 80px;
+}
+
+header {
+    position: fixed;
+    background-color: #002432;
+    color: white;
+    text-decoration: none;
+    height: 80px;
+    width: 100%;
+}
+
+header > a {
+    height: 80px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    height: 30px;
+    margin: 25px;
+}
+
+.hero {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../img/tim-gouw-1K9T5YiZ2WU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.info {
+    color: black;
+    text-align: center;
+    padding: 40px;
+}
+
+.headline {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #E4A636;
+    padding: 19px;
+    border-radius: 15px;
+    grid-area: header;
+}
+
+div a {
+    grid-area: item;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-areas: 
+        "header header header header"
+        "item item item item";
+    row-gap: 20px;
+    padding: 20px 80px 60px 80px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+div a img {
+    width: 150px;
+    padding: 15px 15px 10px 15px;
+}
+
+.title {
+    color: black;
+}
+
+.trailline {
+    padding: 10px 20px 20px 20px;
+}
+
+.trail1,
+.trail2 {
+    color: grey;
+}
+
+.trail2 {
+    font-weight: bold;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr (max(450px));
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "text box"
+    "video video";
+    padding: 50px;
+    gap: 20px;
+}
+
+.infotext {
+    display: grid;
+    grid-template-columns: 1fr 280px 80px 1fr;
+    grid-template-rows: 100px 1fr ;
+    grid-area: text;
+    justify-self: flex-end;
+    padding: 100px 0 100px 0;
+    grid-template-areas: 
+    ". h2 logosmall ."
+    "pitext pitext pitext pitext";
+}
+
+.infotext h2 {
+    grid-area: h2;
+}
+
+.contactbox {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    background-color: #E4A636;
+    border-radius: 15px;
+    padding: 40px 30px 40px 30px;
+    grid-area: box;
+    justify-content: center;
+    align-items: center;
+    justify-self: flex-end;
+}
+
+main section div p,
+main section div a,
+main section div a i {
+    font-size: 20px;
+    padding-top: 10px;
+    color: black;
+    text-wrap: wrap;
+}
+
+.itext {
+    max-width: 1000px;
+    padding: 20px 5px 0 5px;
+    grid-area: pitext;
+}
+
+.logosmall {
+    width: 80px;
+    height: 80px;
+    margin: 0 10px 0 10px;
+    grid-area: logosmall;
+}
+
+.picsupuser {
+    width: 250px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 250px;
+}
+
+.infotext h2 {
+    font-size: 64px;
+    height: 80px;
+    align-self: center;
+}
+
+h3 {
+    font-family: 'Futura', sans-serif;
+    font-size: 36px;
+    padding: 10px 0 10px 0;
+    color: black;
+    text-wrap: wrap;
+}
+
+.contactbox h3 {
+    text-align: center;
+}
+
+.videobox {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: 
+    "h3"
+    "frame";
+    grid-area: video;
+}
+
+.videobox h3 {
+    padding-top: 40px;
+    grid-area: h3;
+}
+
+iframe {
+    width: 640px;
+    height: 360px;
+    grid-area: frame;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #002432;
+}
+
+.footertext {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+}
+
+
+@media only screen and (max-width: 668px) {
+    .container1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "header header"
+            "item item";
+        row-gap: 20px;
+        padding: 20px 30px 40px 30px;
+        text-align: center;
+    }
+    
+    .htext {
+        padding: 0 30px 0 30px;
+    }
+
+    .container2 {
+        display: grid;
+        grid-template-rows: 1fr (max(650px));
+        grid-template-areas: 
+        "text"
+        "video"
+        "box";
+        padding: 30px;
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .infotext {
+        display: grid;
+        grid-template-columns: 1fr 200px 60px 1fr;
+        grid-template-rows: 80px 1fr ;
+        grid-area: text;
+        justify-content: center;
+        padding: 0px 0 20px 0;
+        grid-template-areas: 
+        ". h2 logosmall ."
+        "pitext pitext pitext pitext";
+}
+
+    .infotext h2 {
+        font-size: 48px;
+        height: 80px;
+    }
+
+    .logosmall {
+        width: 60px;
+        height: 60px;
+        margin-left: 10px;
+    }
+
+    .contactbox {
+        display: flex;
+        flex-direction: column;
+        max-width: 450px;
+        min-width: 315px;
+        background-color: #E4A636;
+        border-radius: 15px;
+        padding: 40px 30px 40px 30px;
+        grid-area: box;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .videobox {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 100%;
+        grid-template-rows: 90px 1fr;
+        grid-template-areas: 
+        "h3"
+        "frame";
+        grid-area: video;
+        padding-bottom: 10px;
+    }
+
+    .videobox h3 {
+        padding-top: 15px;
+        grid-area: h3;
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    iframe {
+        width: 315px;
+        height: 177px;
+        grid-area: frame;
+    }
+    
+    }
