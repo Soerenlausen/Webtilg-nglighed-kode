@@ -169,6 +169,7 @@ main section div a i {
     height: 80px;
     margin: 0 10px 0 10px;
     grid-area: logosmall;
+    align-self: center;
 }
 
 .picsupuser {
@@ -182,6 +183,7 @@ main section div a i {
     font-size: 64px;
     height: 80px;
     align-self: center;
+    justify-self: flex-end;
 }
 
 h3 {
@@ -200,17 +202,24 @@ h3 {
     display: grid;
     justify-items: center;
     grid-template-columns: 100%;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: 90px 60px 1fr;
     grid-template-areas: 
     "h3"
+    "p"
     "frame";
     grid-area: video;
+}
+
+.videobox p {
+    grid-area: p;
 }
 
 .videobox h3 {
     padding-top: 40px;
     grid-area: h3;
 }
+
+
 
 iframe {
     width: 640px;
@@ -249,37 +258,39 @@ footer {
 
     .container2 {
         display: grid;
-        grid-template-rows: 1fr (max(650px));
+        grid-template-rows: 1fr;
         grid-template-areas: 
         "text"
         "video"
         "box";
         padding: 30px;
         gap: 20px;
-        justify-items: center;
     }
 
     .infotext {
         display: grid;
-        grid-template-columns: 1fr 200px 60px 1fr;
+        grid-template-columns: auto;
         grid-template-rows: 80px 1fr ;
         grid-area: text;
         justify-content: center;
         padding: 0px 0 20px 0;
         grid-template-areas: 
-        ". h2 logosmall ."
-        "pitext pitext pitext pitext";
+        "h2 logosmall"
+        "pitext pitext";
 }
 
     .infotext h2 {
         font-size: 48px;
         height: 80px;
+        justify-self: flex-end;
     }
 
     .logosmall {
         width: 60px;
         height: 60px;
-        margin-left: 10px;
+        margin: 0 0 0 10px;
+        justify-self: flex-start;
+        align-self: flex-start;
     }
 
     .contactbox {
@@ -293,6 +304,7 @@ footer {
         grid-area: box;
         justify-content: center;
         align-items: center;
+        justify-self: center;
     }
 
     .videobox {
@@ -302,7 +314,8 @@ footer {
         grid-template-rows: 90px 1fr;
         grid-template-areas: 
         "h3"
-        "frame";
+        "frame"
+        "p";
         grid-area: video;
         padding-bottom: 10px;
     }
@@ -312,6 +325,11 @@ footer {
         grid-area: h3;
         font-size: 24px;
         text-align: center;
+    }
+
+    .videobox p {
+        padding: 10px 10px 0px 10px;
+        justify-self: center;
     }
     
     iframe {
