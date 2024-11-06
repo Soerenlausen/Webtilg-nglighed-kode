@@ -219,12 +219,14 @@ h3 {
     grid-area: h3;
 }
 
-
-
 iframe {
     width: 640px;
     height: 360px;
+}
+
+.iframe {
     grid-area: frame;
+    justify-self: space-around;
 }
 
 footer {
