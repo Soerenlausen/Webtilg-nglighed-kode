@@ -98,6 +98,11 @@ div a img {
 
 .trailline {
     padding: 10px 20px 20px 20px;
+    text-decoration: none;
+}
+
+.trailline li {
+    display: inline;
 }
 
 .trail1,
