@@ -116,7 +116,7 @@ div a img {
 
 .container2 {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1.2fr 1fr;
     grid-template-rows: 700px 1fr;
     grid-template-areas: 
     "text box"
@@ -131,7 +131,7 @@ div a img {
     grid-template-rows: 100px 400px ;
     grid-area: text;
     justify-self: flex-end;
-    padding: 100px 0 100px 0;
+    padding: 100px 0px 100px 0px;
     grid-template-areas: 
     ". h2 logosmall ."
     "pitext pitext pitext pitext";
@@ -152,7 +152,7 @@ div a img {
     grid-area: box;
     justify-content: center;
     align-items: center;
-    justify-self: flex-end;
+    justify-self: flex-start;
 }
 
 main section div p,
@@ -167,7 +167,7 @@ main section div a i {
 .itext {
     max-width: 700px;
     max-height: 450px;
-    padding: 30px 0px 0 50px;
+    padding: 30px 0px 0 0px;
     grid-area: pitext;
 }
 
