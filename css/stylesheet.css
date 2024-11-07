@@ -111,8 +111,8 @@ div a img {
 
 .container2 {
     display: grid;
-    grid-template-columns: 1fr (max(450px));
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 700px 1fr;
     grid-template-areas: 
     "text box"
     "video video";
@@ -123,7 +123,7 @@ div a img {
 .infotext {
     display: grid;
     grid-template-columns: 1fr 280px 80px 1fr;
-    grid-template-rows: 100px 1fr ;
+    grid-template-rows: 100px 400px ;
     grid-area: text;
     justify-self: flex-end;
     padding: 100px 0 100px 0;
@@ -140,6 +140,7 @@ div a img {
     display: flex;
     flex-direction: column;
     max-width: 450px;
+    max-height: 650px;
     background-color: #E4A636;
     border-radius: 15px;
     padding: 40px 30px 40px 30px;
@@ -160,6 +161,7 @@ main section div a i {
 
 .itext {
     max-width: 700px;
+    max-height: 450px;
     padding: 30px 0px 0 50px;
     grid-area: pitext;
 }
@@ -226,7 +228,6 @@ iframe {
 
 .iframe {
     grid-area: frame;
-    justify-self: space-around;
 }
 
 footer {
@@ -315,7 +316,7 @@ footer {
 
     .videobox {
         display: grid;
-        justify-items: center;
+        justify-content: center;
         grid-template-columns: 100%;
         grid-template-rows: 90px 1fr;
         grid-template-areas: 
@@ -341,9 +342,11 @@ footer {
     }
     
     iframe {
+        display: flex;
         width: 315px;
         height: 177px;
         grid-area: frame;
+        justify-content: center;
     }
     
     }
