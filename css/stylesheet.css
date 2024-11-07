@@ -224,6 +224,7 @@ h3 {
 iframe {
     width: 640px;
     height: 360px;
+    padding: 5px;
 }
 
 .iframe {
