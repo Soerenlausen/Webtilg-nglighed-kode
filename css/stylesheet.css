@@ -116,12 +116,12 @@ div a img {
 
 .container2 {
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
+    grid-template-columns: 2.3fr 1fr;
     grid-template-rows: 700px 1fr;
     grid-template-areas: 
     "text box"
     "video video";
-    padding: 50px;
+    padding: 20px;
     gap: 20px;
 }
 
@@ -270,6 +270,7 @@ footer {
 
     .container2 {
         display: grid;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas: 
         "text"
