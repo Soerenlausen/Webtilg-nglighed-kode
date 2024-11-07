@@ -227,7 +227,10 @@ iframe {
 }
 
 .iframe {
+    display: flex;
+    flex-wrap: wrap;
     grid-area: frame;
+    justify-content: center;
 }
 
 footer {
