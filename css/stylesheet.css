@@ -97,7 +97,7 @@ div a img {
 }
 
 .trailline {
-    padding: 10px 20px 20px 20px;
+    padding: 10px 20px 10px 20px;
     text-decoration: none;
 }
 
@@ -117,11 +117,11 @@ div a img {
 .container2 {
     display: grid;
     grid-template-columns: 2.3fr 1fr;
-    grid-template-rows: 450px 1fr;
+    grid-template-rows: 520px 1fr;
     grid-template-areas: 
     "text box"
     "video video";
-    padding: 20px;
+    padding: 10px 20px 20px 20px;
     gap: 20px;
 }
 
@@ -144,7 +144,7 @@ div a img {
 .contactbox {
     display: flex;
     flex-direction: column;
-    max-width: 450px;
+    max-width: 350px;
     max-height: 650px;
     background-color: #E4A636;
     border-radius: 15px;
@@ -209,7 +209,7 @@ h3 {
     display: grid;
     justify-items: center;
     grid-template-columns: 100%;
-    grid-template-rows: 90px 60px 1fr;
+    grid-template-rows: 80px 50px 1fr;
     grid-template-areas: 
     "h3"
     "p"
@@ -222,7 +222,7 @@ h3 {
 }
 
 .videobox h3 {
-    padding-top: 40px;
+    padding-top: 30px;
     grid-area: h3;
 }
 
