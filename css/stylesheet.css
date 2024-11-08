@@ -72,7 +72,7 @@ a {
     grid-area: header;
 }
 
-div a {
+.container1 div a {
     display: flex;
     flex-direction: column;
     background-color: rgb(245, 245, 245);
@@ -81,7 +81,7 @@ div a {
     grid-area: item;
 }
 
-div a:hover {
+.container1 div a:hover {
     box-shadow: 1px 1px 8px grey;
     transform: scale(1.05);
 }
