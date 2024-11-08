@@ -270,8 +270,8 @@ footer {
         grid-template-areas: 
             "header header"
             "item item";
-        row-gap: 20px;
-        padding: 20px 30px 40px 30px;
+        gap: 10px 10px;
+        padding: 20px 25px 40px 25px;
         text-align: center;
     }
     
