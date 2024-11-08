@@ -21,16 +21,18 @@ main {
 }
 
 header {
+    display: flex;
     position: fixed;
     background-color: #002432;
     color: white;
     text-decoration: none;
     height: 80px;
     width: 100%;
+    padding-left: 25px;
 }
 
-header > a {
-    height: 80px;
+header a {
+    align-self: center;
 }
 
 a {
@@ -39,7 +41,6 @@ a {
 
 .logo {
     height: 30px;
-    margin: 25px;
 }
 
 .hero {
@@ -72,7 +73,17 @@ a {
 }
 
 div a {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245);
+    padding: 5px;
+    border-radius: 15px;
     grid-area: item;
+}
+
+div a:hover {
+    box-shadow: 1px 1px 8px grey;
+    transform: scale(1.05);
 }
 
 .container1 {
