@@ -5,7 +5,7 @@
    color: white;
 }
 
-h2 {
+h1 {
     font-family: 'Futura', sans-serif;
     color: #002432;
     font-size: 32px;
@@ -146,12 +146,12 @@ div a img {
     justify-self: flex-end;
     padding: 100px 0px 100px 0px;
     grid-template-areas: 
-    ". h2 logosmall ."
+    ". h1 logosmall ."
     "pitext pitext pitext pitext";
 }
 
-.infotext h2 {
-    grid-area: h2;
+.infotext h1 {
+    grid-area: h1;
 }
 
 .contactbox {
@@ -199,14 +199,14 @@ main section div a i {
     border-radius: 250px;
 }
 
-.infotext h2 {
+.infotext h1 {
     font-size: 64px;
     height: 80px;
     align-self: center;
     justify-self: flex-end;
 }
 
-h3 {
+h2 {
     font-family: 'Futura', sans-serif;
     font-size: 36px;
     padding: 10px 0 10px 0;
@@ -214,7 +214,7 @@ h3 {
     text-wrap: wrap;
 }
 
-.contactbox h3 {
+.contactbox h2 {
     text-align: center;
 }
 
@@ -224,7 +224,7 @@ h3 {
     grid-template-columns: 100%;
     grid-template-rows: 80px 50px 1fr;
     grid-template-areas: 
-    "h3"
+    "h2"
     "p"
     "frame";
     grid-area: video;
@@ -234,9 +234,9 @@ h3 {
     grid-area: p;
 }
 
-.videobox h3 {
+.videobox h2 {
     padding-top: 30px;
-    grid-area: h3;
+    grid-area: h2;
 }
 
 iframe {
@@ -301,11 +301,11 @@ footer {
         justify-content: center;
         padding: 0px 0 20px 0;
         grid-template-areas: 
-        "h2 logosmall"
+        "h1 logosmall"
         "pitext pitext";
 }
 
-    .infotext h2 {
+    .infotext h1 {
         font-size: 40px;
         height: 80px;
         justify-self: flex-end;
@@ -343,16 +343,16 @@ footer {
         grid-template-columns: 100%;
         grid-template-rows: 90px 1fr;
         grid-template-areas: 
-        "h3"
+        "h2"
         "p"
         "frame";
         grid-area: video;
         padding-bottom: 10px;
     }
 
-    .videobox h3 {
+    .videobox h2 {
         padding-top: 15px;
-        grid-area: h3;
+        grid-area: h2;
         font-size: 24px;
         text-align: center;
     }
