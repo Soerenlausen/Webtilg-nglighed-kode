@@ -8,12 +8,12 @@
 h1 {
     font-family: 'Futura', sans-serif;
     color: #002432;
-    font-size: 32px;
+    font-size: 2em;
 }
 
 p {
     font-family: Helvetica, sans-serif;
-    font-size: 24px; 
+    font-size: 1.5em; 
 }
 
 main {
@@ -172,7 +172,7 @@ div a img {
 main section div p,
 main section div a,
 main section div a i {
-    font-size: 20px;
+    font-size: 1.25em;
     padding-top: 10px;
     color: black;
     text-wrap: wrap;
@@ -201,7 +201,7 @@ main section div a i {
 }
 
 .infotext h1 {
-    font-size: 64px;
+    font-size: 4em;
     height: 80px;
     align-self: center;
     justify-self: flex-end;
@@ -209,7 +209,7 @@ main section div a i {
 
 h2 {
     font-family: 'Futura', sans-serif;
-    font-size: 36px;
+    font-size: 2.25em;
     padding: 10px 0 10px 0;
     color: black;
     text-wrap: wrap;
@@ -262,7 +262,7 @@ footer {
 .footertext {
     text-align: center;
     padding: 20px;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 
@@ -307,7 +307,7 @@ footer {
 }
 
     .infotext h1 {
-        font-size: 40px;
+        font-size: 2.5em;
         height: 80px;
         justify-self: flex-end;
     }
@@ -354,7 +354,7 @@ footer {
     .videobox h2 {
         padding-top: 15px;
         grid-area: h2;
-        font-size: 24px;
+        font-size: 1.5em;
         text-align: center;
     }
 
@@ -362,7 +362,7 @@ footer {
         padding: 0px 5px 10px 5px;
         justify-self: center;
         text-align: center;
-        font-size: 18px;
+        font-size: 1.125em;
     }
     
     iframe {
