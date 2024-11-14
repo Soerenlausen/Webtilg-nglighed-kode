@@ -174,12 +174,24 @@ div a img {
 }
 
 main section div p,
-main section div a,
-main section div a i {
+main section div a {
     font-size: 1.25em;
     padding-top: 10px;
     color: black;
     text-wrap: wrap;
+}
+
+main section div a i {
+    font-size: 1.25em;
+    color: black;
+    text-wrap: wrap;
+}
+
+.mailto {
+    display: flex;
+    height: 25px;
+    align-items: center;
+    padding-top: 30px;
 }
 
 .itext {
