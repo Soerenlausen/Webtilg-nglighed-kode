@@ -56,6 +56,10 @@ a {
     text-align: center;
 }
 
+.htext {
+    text-shadow: 1px 1px 4px black;
+}
+
 .info {
     color: black;
     text-align: center;
