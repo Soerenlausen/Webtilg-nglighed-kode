@@ -99,9 +99,8 @@ a {
     grid-template-areas: 
         "header header header header"
         "item item item item";
-    gap: 20px 5px;
+    gap: 10px 10px;
     padding: 20px 80px 60px 80px;
-    justify-content: space-evenly;
     text-align: center;
 }
 
@@ -285,7 +284,7 @@ footer {
     font-size: 1em;
 }
 
-
+/* tilpasning til mobiler */
 @media only screen and (max-width: 668px) {
     .container1 {
         display: grid;
@@ -393,4 +392,20 @@ footer {
         justify-content: center;
     }
     
+    }
+
+    /* tilpasning på større skærme end 27" 1080p */
+    @media only screen and (min-width: 1900px) {
+
+        .container2 {
+            display: grid;
+            grid-template-columns: 1fr 1100px 350px 1fr;
+            grid-template-rows: 520px 1fr;
+            grid-template-areas: 
+            ". text box ."
+            ". video video .";
+            padding: 30px;
+            gap: 20px;
+        }
+
     }
